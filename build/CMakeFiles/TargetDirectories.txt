@@ -1,0 +1,3 @@
+/d/dev/wiiu3d/build/CMakeFiles/blossom_quest.dir
+/d/dev/wiiu3d/build/CMakeFiles/edit_cache.dir
+/d/dev/wiiu3d/build/CMakeFiles/rebuild_cache.dir

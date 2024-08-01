@@ -40,6 +40,15 @@ typedef struct
 
 } DSPADPCM;
 
-void test_sound();
+//void test_sound();
+
+bool sound_init();
+
+AXVoice *sound_create_voice(const char* soundFile, float volume = 1.0f, float pan = 0.0f, AX_DEVICE_TYPE deviceType = AX_DEVICE_TYPE_TV);
+bool sound_play_voice(AXVoice *voice);
+bool sound_stop_voice(AXVoice *voice);
+bool sound_set_voice_volume(AXVoice *voice, float volume);
+bool sound_set_voice_pan(AXVoice *voice, float pan, AX_DEVICE_TYPE deviceType = AX_DEVICE_TYPE_TV);
+
 
 #endif

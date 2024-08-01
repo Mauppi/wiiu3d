@@ -130,6 +130,21 @@ blossom_quest/fast:
 .PHONY : blossom_quest/fast
 
 # target to build an object file
+src/choicebox.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/choicebox.o
+.PHONY : src/choicebox.o
+
+# target to preprocess a source file
+src/choicebox.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/choicebox.i
+.PHONY : src/choicebox.i
+
+# target to generate assembly for a file
+src/choicebox.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/choicebox.s
+.PHONY : src/choicebox.s
+
+# target to build an object file
 src/engine/app.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/app.o
 .PHONY : src/engine/app.o
@@ -143,6 +158,21 @@ src/engine/app.i:
 src/engine/app.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/app.s
 .PHONY : src/engine/app.s
+
+# target to build an object file
+src/engine/camera.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/camera.o
+.PHONY : src/engine/camera.o
+
+# target to preprocess a source file
+src/engine/camera.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/camera.i
+.PHONY : src/engine/camera.i
+
+# target to generate assembly for a file
+src/engine/camera.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/camera.s
+.PHONY : src/engine/camera.s
 
 # target to build an object file
 src/engine/graphics.o:
@@ -160,6 +190,36 @@ src/engine/graphics.s:
 .PHONY : src/engine/graphics.s
 
 # target to build an object file
+src/engine/input.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/input.o
+.PHONY : src/engine/input.o
+
+# target to preprocess a source file
+src/engine/input.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/input.i
+.PHONY : src/engine/input.i
+
+# target to generate assembly for a file
+src/engine/input.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/input.s
+.PHONY : src/engine/input.s
+
+# target to build an object file
+src/engine/resourcemanager.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o
+.PHONY : src/engine/resourcemanager.o
+
+# target to preprocess a source file
+src/engine/resourcemanager.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.i
+.PHONY : src/engine/resourcemanager.i
+
+# target to generate assembly for a file
+src/engine/resourcemanager.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.s
+.PHONY : src/engine/resourcemanager.s
+
+# target to build an object file
 src/engine/sound.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/sound.o
 .PHONY : src/engine/sound.o
@@ -173,6 +233,81 @@ src/engine/sound.i:
 src/engine/sound.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/sound.s
 .PHONY : src/engine/sound.s
+
+# target to build an object file
+src/engine/sprite.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/sprite.o
+.PHONY : src/engine/sprite.o
+
+# target to preprocess a source file
+src/engine/sprite.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/sprite.i
+.PHONY : src/engine/sprite.i
+
+# target to generate assembly for a file
+src/engine/sprite.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/engine/sprite.s
+.PHONY : src/engine/sprite.s
+
+# target to build an object file
+src/fader.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/fader.o
+.PHONY : src/fader.o
+
+# target to preprocess a source file
+src/fader.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/fader.i
+.PHONY : src/fader.i
+
+# target to generate assembly for a file
+src/fader.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/fader.s
+.PHONY : src/fader.s
+
+# target to build an object file
+src/levelloader.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levelloader.o
+.PHONY : src/levelloader.o
+
+# target to preprocess a source file
+src/levelloader.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levelloader.i
+.PHONY : src/levelloader.i
+
+# target to generate assembly for a file
+src/levelloader.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levelloader.s
+.PHONY : src/levelloader.s
+
+# target to build an object file
+src/levels1.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels1.o
+.PHONY : src/levels1.o
+
+# target to preprocess a source file
+src/levels1.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels1.i
+.PHONY : src/levels1.i
+
+# target to generate assembly for a file
+src/levels1.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels1.s
+.PHONY : src/levels1.s
+
+# target to build an object file
+src/levels2.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels2.o
+.PHONY : src/levels2.o
+
+# target to preprocess a source file
+src/levels2.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels2.i
+.PHONY : src/levels2.i
+
+# target to generate assembly for a file
+src/levels2.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels2.s
+.PHONY : src/levels2.s
 
 # target to build an object file
 src/main.o:
@@ -198,15 +333,42 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... blossom_quest"
+	@echo "... src/choicebox.o"
+	@echo "... src/choicebox.i"
+	@echo "... src/choicebox.s"
 	@echo "... src/engine/app.o"
 	@echo "... src/engine/app.i"
 	@echo "... src/engine/app.s"
+	@echo "... src/engine/camera.o"
+	@echo "... src/engine/camera.i"
+	@echo "... src/engine/camera.s"
 	@echo "... src/engine/graphics.o"
 	@echo "... src/engine/graphics.i"
 	@echo "... src/engine/graphics.s"
+	@echo "... src/engine/input.o"
+	@echo "... src/engine/input.i"
+	@echo "... src/engine/input.s"
+	@echo "... src/engine/resourcemanager.o"
+	@echo "... src/engine/resourcemanager.i"
+	@echo "... src/engine/resourcemanager.s"
 	@echo "... src/engine/sound.o"
 	@echo "... src/engine/sound.i"
 	@echo "... src/engine/sound.s"
+	@echo "... src/engine/sprite.o"
+	@echo "... src/engine/sprite.i"
+	@echo "... src/engine/sprite.s"
+	@echo "... src/fader.o"
+	@echo "... src/fader.i"
+	@echo "... src/fader.s"
+	@echo "... src/levelloader.o"
+	@echo "... src/levelloader.i"
+	@echo "... src/levelloader.s"
+	@echo "... src/levels1.o"
+	@echo "... src/levels1.i"
+	@echo "... src/levels1.s"
+	@echo "... src/levels2.o"
+	@echo "... src/levels2.i"
+	@echo "... src/levels2.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

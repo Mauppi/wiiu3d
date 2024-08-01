@@ -125,12 +125,147 @@ CMakeFiles/blossom_quest.dir/src/engine/sound.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/engine/sound.s"
 	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/engine/sound.cpp -o CMakeFiles/blossom_quest.dir/src/engine/sound.s
 
+CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o: /d/dev/wiiu3d/src/engine/resourcemanager.cpp
+CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o -MF CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o.d -o CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o -c /d/dev/wiiu3d/src/engine/resourcemanager.cpp
+
+CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/engine/resourcemanager.cpp > CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.i
+
+CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/engine/resourcemanager.cpp -o CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.s
+
+CMakeFiles/blossom_quest.dir/src/engine/camera.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/engine/camera.o: /d/dev/wiiu3d/src/engine/camera.cpp
+CMakeFiles/blossom_quest.dir/src/engine/camera.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/blossom_quest.dir/src/engine/camera.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/engine/camera.o -MF CMakeFiles/blossom_quest.dir/src/engine/camera.o.d -o CMakeFiles/blossom_quest.dir/src/engine/camera.o -c /d/dev/wiiu3d/src/engine/camera.cpp
+
+CMakeFiles/blossom_quest.dir/src/engine/camera.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/engine/camera.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/engine/camera.cpp > CMakeFiles/blossom_quest.dir/src/engine/camera.i
+
+CMakeFiles/blossom_quest.dir/src/engine/camera.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/engine/camera.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/engine/camera.cpp -o CMakeFiles/blossom_quest.dir/src/engine/camera.s
+
+CMakeFiles/blossom_quest.dir/src/engine/input.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/engine/input.o: /d/dev/wiiu3d/src/engine/input.cpp
+CMakeFiles/blossom_quest.dir/src/engine/input.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/blossom_quest.dir/src/engine/input.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/engine/input.o -MF CMakeFiles/blossom_quest.dir/src/engine/input.o.d -o CMakeFiles/blossom_quest.dir/src/engine/input.o -c /d/dev/wiiu3d/src/engine/input.cpp
+
+CMakeFiles/blossom_quest.dir/src/engine/input.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/engine/input.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/engine/input.cpp > CMakeFiles/blossom_quest.dir/src/engine/input.i
+
+CMakeFiles/blossom_quest.dir/src/engine/input.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/engine/input.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/engine/input.cpp -o CMakeFiles/blossom_quest.dir/src/engine/input.s
+
+CMakeFiles/blossom_quest.dir/src/engine/sprite.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/engine/sprite.o: /d/dev/wiiu3d/src/engine/sprite.cpp
+CMakeFiles/blossom_quest.dir/src/engine/sprite.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/blossom_quest.dir/src/engine/sprite.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/engine/sprite.o -MF CMakeFiles/blossom_quest.dir/src/engine/sprite.o.d -o CMakeFiles/blossom_quest.dir/src/engine/sprite.o -c /d/dev/wiiu3d/src/engine/sprite.cpp
+
+CMakeFiles/blossom_quest.dir/src/engine/sprite.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/engine/sprite.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/engine/sprite.cpp > CMakeFiles/blossom_quest.dir/src/engine/sprite.i
+
+CMakeFiles/blossom_quest.dir/src/engine/sprite.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/engine/sprite.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/engine/sprite.cpp -o CMakeFiles/blossom_quest.dir/src/engine/sprite.s
+
+CMakeFiles/blossom_quest.dir/src/levelloader.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/levelloader.o: /d/dev/wiiu3d/src/levelloader.cpp
+CMakeFiles/blossom_quest.dir/src/levelloader.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/blossom_quest.dir/src/levelloader.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/levelloader.o -MF CMakeFiles/blossom_quest.dir/src/levelloader.o.d -o CMakeFiles/blossom_quest.dir/src/levelloader.o -c /d/dev/wiiu3d/src/levelloader.cpp
+
+CMakeFiles/blossom_quest.dir/src/levelloader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/levelloader.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/levelloader.cpp > CMakeFiles/blossom_quest.dir/src/levelloader.i
+
+CMakeFiles/blossom_quest.dir/src/levelloader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/levelloader.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/levelloader.cpp -o CMakeFiles/blossom_quest.dir/src/levelloader.s
+
+CMakeFiles/blossom_quest.dir/src/fader.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/fader.o: /d/dev/wiiu3d/src/fader.cpp
+CMakeFiles/blossom_quest.dir/src/fader.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/blossom_quest.dir/src/fader.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/fader.o -MF CMakeFiles/blossom_quest.dir/src/fader.o.d -o CMakeFiles/blossom_quest.dir/src/fader.o -c /d/dev/wiiu3d/src/fader.cpp
+
+CMakeFiles/blossom_quest.dir/src/fader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/fader.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/fader.cpp > CMakeFiles/blossom_quest.dir/src/fader.i
+
+CMakeFiles/blossom_quest.dir/src/fader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/fader.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/fader.cpp -o CMakeFiles/blossom_quest.dir/src/fader.s
+
+CMakeFiles/blossom_quest.dir/src/levels2.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/levels2.o: /d/dev/wiiu3d/src/levels2.cpp
+CMakeFiles/blossom_quest.dir/src/levels2.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/blossom_quest.dir/src/levels2.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/levels2.o -MF CMakeFiles/blossom_quest.dir/src/levels2.o.d -o CMakeFiles/blossom_quest.dir/src/levels2.o -c /d/dev/wiiu3d/src/levels2.cpp
+
+CMakeFiles/blossom_quest.dir/src/levels2.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/levels2.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/levels2.cpp > CMakeFiles/blossom_quest.dir/src/levels2.i
+
+CMakeFiles/blossom_quest.dir/src/levels2.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/levels2.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/levels2.cpp -o CMakeFiles/blossom_quest.dir/src/levels2.s
+
+CMakeFiles/blossom_quest.dir/src/choicebox.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/choicebox.o: /d/dev/wiiu3d/src/choicebox.cpp
+CMakeFiles/blossom_quest.dir/src/choicebox.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/blossom_quest.dir/src/choicebox.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/choicebox.o -MF CMakeFiles/blossom_quest.dir/src/choicebox.o.d -o CMakeFiles/blossom_quest.dir/src/choicebox.o -c /d/dev/wiiu3d/src/choicebox.cpp
+
+CMakeFiles/blossom_quest.dir/src/choicebox.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/choicebox.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/choicebox.cpp > CMakeFiles/blossom_quest.dir/src/choicebox.i
+
+CMakeFiles/blossom_quest.dir/src/choicebox.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/choicebox.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/choicebox.cpp -o CMakeFiles/blossom_quest.dir/src/choicebox.s
+
+CMakeFiles/blossom_quest.dir/src/levels1.o: CMakeFiles/blossom_quest.dir/flags.make
+CMakeFiles/blossom_quest.dir/src/levels1.o: /d/dev/wiiu3d/src/levels1.cpp
+CMakeFiles/blossom_quest.dir/src/levels1.o: CMakeFiles/blossom_quest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/blossom_quest.dir/src/levels1.o"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blossom_quest.dir/src/levels1.o -MF CMakeFiles/blossom_quest.dir/src/levels1.o.d -o CMakeFiles/blossom_quest.dir/src/levels1.o -c /d/dev/wiiu3d/src/levels1.cpp
+
+CMakeFiles/blossom_quest.dir/src/levels1.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/blossom_quest.dir/src/levels1.i"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /d/dev/wiiu3d/src/levels1.cpp > CMakeFiles/blossom_quest.dir/src/levels1.i
+
+CMakeFiles/blossom_quest.dir/src/levels1.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/blossom_quest.dir/src/levels1.s"
+	/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /d/dev/wiiu3d/src/levels1.cpp -o CMakeFiles/blossom_quest.dir/src/levels1.s
+
 # Object files for target blossom_quest
 blossom_quest_OBJECTS = \
 "CMakeFiles/blossom_quest.dir/src/main.o" \
 "CMakeFiles/blossom_quest.dir/src/engine/app.o" \
 "CMakeFiles/blossom_quest.dir/src/engine/graphics.o" \
-"CMakeFiles/blossom_quest.dir/src/engine/sound.o"
+"CMakeFiles/blossom_quest.dir/src/engine/sound.o" \
+"CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o" \
+"CMakeFiles/blossom_quest.dir/src/engine/camera.o" \
+"CMakeFiles/blossom_quest.dir/src/engine/input.o" \
+"CMakeFiles/blossom_quest.dir/src/engine/sprite.o" \
+"CMakeFiles/blossom_quest.dir/src/levelloader.o" \
+"CMakeFiles/blossom_quest.dir/src/fader.o" \
+"CMakeFiles/blossom_quest.dir/src/levels2.o" \
+"CMakeFiles/blossom_quest.dir/src/choicebox.o" \
+"CMakeFiles/blossom_quest.dir/src/levels1.o"
 
 # External object files for target blossom_quest
 blossom_quest_EXTERNAL_OBJECTS =
@@ -139,13 +274,18 @@ blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/main.o
 blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/app.o
 blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/graphics.o
 blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/sound.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/resourcemanager.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/camera.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/input.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/engine/sprite.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/levelloader.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/fader.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/levels2.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/choicebox.o
+blossom_quest.elf: CMakeFiles/blossom_quest.dir/src/levels1.o
 blossom_quest.elf: CMakeFiles/blossom_quest.dir/build.make
-blossom_quest.elf: /d/dev/wiiu3d/libvorbisfile.a
-blossom_quest.elf: /d/dev/wiiu3d/libvorbisenc.a
-blossom_quest.elf: /d/dev/wiiu3d/libvorbis.a
-blossom_quest.elf: /d/dev/wiiu3d/libogg.a
 blossom_quest.elf: CMakeFiles/blossom_quest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable blossom_quest.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/d/dev/wiiu3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable blossom_quest.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/blossom_quest.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Converting blossom_quest to .rpx format"
 	/opt/devkitpro/tools/bin/elf2rpl.exe /d/dev/wiiu3d/build/blossom_quest.elf /d/dev/wiiu3d/build/blossom_quest.rpx

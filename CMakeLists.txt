@@ -4,10 +4,13 @@ project(blossom_quest CXX C)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-set(SOURCES src/main.cpp src/engine/app.cpp src/engine/graphics.cpp src/engine/sound.cpp)
+set(SOURCES src/main.cpp src/engine/stb_image.h src/engine/app.cpp src/engine/graphics.cpp src/engine/sound.cpp src/engine/resourcemanager.cpp src/engine/camera.cpp src/engine/input.cpp src/engine/sprite.cpp src/levelloader.cpp src/fader.cpp src/levels2.cpp src/choicebox.cpp src/levels1.cpp )
+
+set(POSITION_INDEPENDENT_CODE OFF)
+set(COMPILE_FLAGS "")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/libvorbisfile.a ${CMAKE_CURRENT_SOURCE_DIR}/libvorbisenc.a ${CMAKE_CURRENT_SOURCE_DIR}/libvorbis.a ${CMAKE_CURRENT_SOURCE_DIR}/libogg.a)
+target_link_libraries(${PROJECT_NAME})
 
 wut_create_rpx(${PROJECT_NAME})

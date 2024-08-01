@@ -163,4 +163,27 @@ CMakeFiles/blossom_quest.dir/src/engine/sound.o: \
  D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/cstring \
  D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/string.h \
  D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/strings.h \
- D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/sys/string.h
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/sys/string.h \
+ D:/dev/wiiu3d/src/engine/resourcemanager.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/vector \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_uninitialized.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_vector.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/stl_bvector.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/vector.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/math.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/cmath \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/math.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/specfun.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/limits \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/gamma.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/special_function_util.h \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/bessel_function.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/beta_function.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/ell_integral.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/exp_integral.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/hypergeometric.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/legendre_function.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/modified_bessel_func.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/poly_hermite.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/poly_laguerre.tcc \
+ D:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tr1/riemann_zeta.tcc

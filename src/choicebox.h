@@ -34,6 +34,8 @@ struct ChoiceBox {
     private:
         bool touchDown = false;
         void select(int index);
+        int touchDownFrames = 0;
+        int selectTimes = 0;
 };
 
 #endif

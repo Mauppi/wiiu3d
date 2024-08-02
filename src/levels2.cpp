@@ -14,7 +14,7 @@ void LevelPuzzle1::init() {
 
     trump = new Sprite();
     trump->init("trump.gtx");
-    trump->position = glm::vec3(-1600.0f, -720.0f, 0.0f);
+    trump->position = glm::vec3(-2600.0f, -720.0f, 0.0f);
     trump->scale = glm::vec3(340.0f, 380.0f, 1.0f);
     trump->visible = true;
 
@@ -26,7 +26,7 @@ void LevelPuzzle1::init() {
 
     sniper = new Sprite();
     sniper->init("pewpewman.gtx");
-    sniper->position = glm::vec3(720.0f, -720.0f, 0.0f);
+    sniper->position = glm::vec3(720.0f, -1920.0f, 0.0f);
     sniper->scale = glm::vec3(340.0f, 380.0f, 1.0f);
     sniper->visible = false;
 
@@ -41,14 +41,23 @@ void LevelPuzzle1::update() {
     introanimtimer += deltaTime;
     if (introanimtimer >= 1.5f && introanimindex == 0) {
         introanimindex = 1;
-        trump->position = glm::vec3(-1080.0f, -720.0f, 0.0f);
     } else if (introanimtimer >= 6.0f && introanimindex == 1) {
         introanimindex = 2;
-        trump->position = glm::vec3(-720.0f, -720.0f, 0.0f);
     } else if (introanimtimer >= 8.0f && introanimindex == 2) {
         introanimindex = 3;
         
         sniper->visible = true;
+    }
+
+    if (introanimindex == 0) {
+        trump->position.x = lerp(trump->position.x, -1600.0f, 1.0f * deltaTime);
+    } else if (introanimindex == 1) {
+        trump->position.x = lerp(trump->position.x, -1080.0f, 1.0f * deltaTime);
+        trump->position.y = lerp(trump->position.y, -720.0f, 1.0f * deltaTime);
+    } else if (introanimindex == 2) {
+        trump->position.x = lerp(trump->position.x, -720.0f, 1.0f * deltaTime);
+    } else if (introanimindex == 3) {
+        sniper->position.y = lerp(sniper->position.y, -720.0f, 5.0f * deltaTime);
     }
 
     if (selecting_started) {

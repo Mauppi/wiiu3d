@@ -36,6 +36,6 @@ void Fader::update() {
 }
 
 void Fader::draw() {
-    WHBLogPrintf("Sprite: %f %f %f %f", blackSpr->colorModulate.x, blackSpr->colorModulate.y, blackSpr->colorModulate.z, blackSpr->colorModulate.w);
+    //WHBLogPrintf("Sprite: %f %f %f %f", blackSpr->colorModulate.x, blackSpr->colorModulate.y, blackSpr->colorModulate.z, blackSpr->colorModulate.w);
     blackSpr->draw();
 }

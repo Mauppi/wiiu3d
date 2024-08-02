@@ -50,24 +50,31 @@ ChoiceBoxStatus *ChoiceBox::get_status() {
 
 void ChoiceBox::update() {
 
-    if (vpad_current_status.tpNormal.touched == 1 && !touchDown) {
+    if (vpad_current_status.tpNormal.touched == 1 && vpad_current_status.tpNormal.validity == VPAD_VALID && !touchDown) {
         touchDown = true;
-        WHBLogPrintf("TP: %d, %d", vpad_current_status.tpNormal.x, vpad_current_status.tpNormal.y);
-        if (vpad_current_status.tpNormal.x < 1920 / 2 && vpad_current_status.tpNormal.y < 1080 / 2 && addedChoices >= 2) {
+        touchDownFrames = 10;
+        VPADTouchData touch = vpad_current_status.tpNormal;
+        VPADGetTPCalibratedPoint(VPAD_CHAN_0, &touch, &vpad_current_status.tpNormal);
+        if (touch.x < 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 2) {
             // LOWER LEFT CORNER
             select(2);
-        } else if (vpad_current_status.tpNormal.x < 1920 / 2 && vpad_current_status.tpNormal.y > 1080 / 2 && addedChoices >= 3) {
+        } else if (touch.x > 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 3) {
             // LOWER RIGHT CORNER
             select(3);
-        } else if (vpad_current_status.tpNormal.x > 1920 / 2 && vpad_current_status.tpNormal.y < 1080 / 2 && addedChoices >= 0) {
+        } else if (touch.x < 1280 / 2 && touch.y < 720 / 2 && addedChoices >= 0) {
             // UPPER LEFT CORNER
             select(0);
-        } else if (vpad_current_status.tpNormal.x > 1920 / 2 && vpad_current_status.tpNormal.y > 1080 / 2 && addedChoices >= 1) {
+        } else if (touch.x > 1280 / 2 && touch.y < 720 / 2 && addedChoices >= 1) {
             // UPPER RIGHT CORNER
             select(1);
         }
-    } else if (vpad_current_status.tpNormal.touched == 0 && touchDown) {
-        touchDown = false;
+    }
+    if (vpad_current_status.tpNormal.touched == 0 && touchDown) {
+        touchDownFrames -= 1;
+        if (touchDownFrames <= 0) {
+            touchDownFrames = 0;
+            touchDown = false;
+        }
     }
 
 }
@@ -75,12 +82,24 @@ void ChoiceBox::update() {
 void ChoiceBox::select(int index) {
     if (status->ready) return;
 
+    WHBLogPrintf("Selected: %d", index);
 
     sound_play_voice(selectSound);
     if (status->selected == index) {
-        sound_play_voice(selectSoundDRC);
-        status->ready = true;
+        selectTimes++;
+        if (selectTimes >= 2) {
+            sound_play_voice(selectSoundDRC);
+            status->ready = true;
+        }
+
+        
+    } else {
+        selectTimes = 0;
     }
+
+    choiceBgs[status->selected]->colorModulate = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
+    choiceBgs[index]->colorModulate = glm::vec4(1.0f, 1.0f, 1.0f, 0.5f);
+    
     status->selected = index;
 }
 

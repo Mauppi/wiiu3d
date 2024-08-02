@@ -14,3 +14,5 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 target_link_libraries(${PROJECT_NAME})
 
 wut_create_rpx(${PROJECT_NAME})
+
+install(FILES ${CMAKE_BINARY_DIR}/${PROJECT_NAME}.rpx DESTINATION ${CMAKE_BINARY_DIR}/code)

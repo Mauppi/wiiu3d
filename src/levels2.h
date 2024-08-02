@@ -11,6 +11,8 @@ struct LevelPuzzle1
     Sprite *trump;
     Sprite *sniper;
     Sprite *bullet;
+    Sprite *cough;
+    Sprite *grave;
 
     ChoiceBox *choicebox;
 
@@ -18,6 +20,8 @@ struct LevelPuzzle1
     AXVoice *mus_selecting_l;
     AXVoice *mus_selecting_l_drc;
     AXVoice *mus_selecting_r;
+    AXVoice *sfx_coughdie;
+    AXVoice *sfx_sigma;
 
     void init();
     void update();
@@ -30,6 +34,10 @@ struct LevelPuzzle1
         float introanimtimer = 0.0f;
         int introanimindex = 0;
         bool selecting_started = false;
+        bool selecting_finished = false;
+        int selectedChoice = -1;
+        int choiceAnimIndex = 0;
+        float choiceAnimTimer = 0.0f;
 };
 
 #endif

@@ -52,7 +52,7 @@ void ChoiceBox::update() {
 
     if (vpad_current_status.tpNormal.touched == 1 && vpad_current_status.tpNormal.validity == VPAD_VALID && !touchDown) {
         touchDown = true;
-        touchDownFrames = 10;
+        touchDownFrames = 40;
         VPADTouchData touch = vpad_current_status.tpNormal;
         VPADGetTPCalibratedPoint(VPAD_CHAN_0, &touch, &vpad_current_status.tpNormal);
         if (touch.x < 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 2) {
@@ -87,7 +87,7 @@ void ChoiceBox::select(int index) {
     sound_play_voice(selectSound);
     if (status->selected == index) {
         selectTimes++;
-        if (selectTimes >= 2) {
+        if (selectTimes >= 1) {
             sound_play_voice(selectSoundDRC);
             status->ready = true;
         }

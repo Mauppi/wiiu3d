@@ -95,6 +95,8 @@ bool graphics_init() {
     }
 
 
+    // VITTU MITÄ PASKAA SAAATAANNAAAAA!!!!!!
+
     vPosBuf.flags = GX2R_RESOURCE_BIND_VERTEX_BUFFER | GX2R_RESOURCE_USAGE_CPU_READ | GX2R_RESOURCE_USAGE_CPU_WRITE | GX2R_RESOURCE_USAGE_GPU_READ;
     vPosBuf.elemSize = 2 * 4;
     vPosBuf.elemCount = 4;

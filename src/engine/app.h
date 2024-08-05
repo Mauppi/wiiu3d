@@ -3,11 +3,11 @@
 #include <typeinfo>
 #include "sprite.h"
 #include "../levelloader.h"
+#include "animation.h"
 
 inline bool app_quit_flag = false;
 inline float deltaTime = 0.0f;
-inline Sprite sprtest;
-
+inline AnimationManager animationManager;
 
 template<typename T>
 inline T lerp(T a, T b, float t) {

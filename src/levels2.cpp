@@ -43,6 +43,9 @@ void LevelPuzzle1::init() {
     grave->position = glm::vec3(720.0f, -720.0f, 0.0f);
     grave->scale = glm::vec3(128.0f, 164.0f, 1.0f);
     grave->visible = false;
+
+    choice0_anim_1->init(0.1f, 0.3f, 0.2f);
+    choice0_anim_2->init(0.5f, 0.7f, 0.2f);
 }
 
 void LevelPuzzle1::update() {
@@ -200,6 +203,14 @@ LevelPuzzle1::~LevelPuzzle1() {
     delete trump;
     delete bullet;
     delete sniper;
+    delete cough;
+    delete grave;
+    delete choicebox;
+    delete choice0_anim_1;
+    delete choice0_anim_2;
+    delete choice0_anim_group1;
+    delete choice0_anim_group2;
+    delete choice0_anim_seq;
 
     ResourceManager_FreeResource("trump.gtx");
     ResourceManager_FreeResource("bullet.gtx");

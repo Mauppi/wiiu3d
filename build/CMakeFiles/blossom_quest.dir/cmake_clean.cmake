@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/blossom_quest.dir/src/choicebox.o"
   "CMakeFiles/blossom_quest.dir/src/choicebox.o.d"
+  "CMakeFiles/blossom_quest.dir/src/engine/animation.o"
+  "CMakeFiles/blossom_quest.dir/src/engine/animation.o.d"
   "CMakeFiles/blossom_quest.dir/src/engine/app.o"
   "CMakeFiles/blossom_quest.dir/src/engine/app.o.d"
   "CMakeFiles/blossom_quest.dir/src/engine/camera.o"

@@ -32,6 +32,8 @@ void Fader::update() {
             blackSpr->colorModulate.w -= deltaTime / time * (blackSpr->colorModulate.w - targetModulate.w);
         }
         //WHBLogPrintf("Log alpha: %f", blackSpr->colorModulate.w);
+    } else {
+        blackSpr->colorModulate = targetModulate;
     }
 }
 

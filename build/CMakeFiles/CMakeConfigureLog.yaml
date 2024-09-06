@@ -8,7 +8,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       The target system is: CafeOS - 1 - ppc
-      The host system is: MSYS - 3.5.3.x86_64 - x86_64
+      The host system is: MSYS - 3.5.4-0bc1222b.x86_64 - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -24,13 +24,13 @@ events:
       
       The output was:
       0
-      D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 018000b8
+      C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 018000b8
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /d/dev/PROJECTS/wiiu3d/build/CMakeFiles/3.29.5/CompilerIdCXX/a.out
+        /c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/3.30.3/CompilerIdCXX/a.out
       
   -
     kind: "message-v1"
@@ -47,25 +47,25 @@ events:
       
       The output was:
       0
-      D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 018000b8
+      C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 018000b8
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /d/dev/PROJECTS/wiiu3d/build/CMakeFiles/3.29.5/CompilerIdC/a.out
+        /c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/3.30.3/CompilerIdC/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc"
-      binary: "/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc"
+      source: "/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY"
+      binary: "/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -76,67 +76,67 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc'
+        Change Dir: '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY'
         
-        Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_e3fbb/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_e3fbb.dir/build.make CMakeFiles/cmTC_e3fbb.dir/build
-        make[1]: Entering directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc'
-        Building CXX object CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o
-        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_009bb/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_009bb.dir/build.make CMakeFiles/cmTC_009bb.dir/build
+        make[1]: Entering directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY'
+        Building CXX object CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o
+        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe
+        COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe
         Target: powerpc-eabi
         Configured with: ../../gcc-13.2.0/configure --enable-languages=c,c++,objc,lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections'
         Thread model: dkp
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.1.0 (devkitPPC release 45.2) 
-        COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_e3fbb.dir/'
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1plus.exe -quiet -v -iprefix D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D_GNU_SOURCE -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem D:/msys64real/opt/devkitpro/wut/include D:/msys64real/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_e3fbb.dir/ -dumpbase CMakeCXXCompilerABI.cpp -dumpbase-ext .cpp -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o D:\\msys64real\\tmp\\ccvi1Toj.s
+        COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_009bb.dir/'
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D_GNU_SOURCE -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem C:/msys64/opt/devkitpro/wut/include C:/msys64/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_009bb.dir/ -dumpbase CMakeCXXCompilerABI.cpp -dumpbase-ext .cpp -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o C:\\msys64\\tmp\\ccsGka0y.s
         GNU C++17 (devkitPPC release 45.2) version 13.1.0 (powerpc-eabi)
         	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.18-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"
-        ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"
+        ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         D:/msys64real/opt/devkitpro/wut/include
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include
+         C:/msys64/opt/devkitpro/wut/include
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include
         End of search list.
         Compiler executable checksum: df1f6c5cbe905eeeb208a495f83259b2
-        COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_e3fbb.dir/'
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o D:\\msys64real\\tmp\\ccvi1Toj.s
-        COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
-        LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
-        COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.'
-        Linking CXX executable cmTC_e3fbb.elf
-        /usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_e3fbb.dir/link.txt --verbose=1
-        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o -o cmTC_e3fbb.elf  -lwut -lm
+        COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_009bb.dir/'
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o C:\\msys64\\tmp\\ccsGka0y.s
+        COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
+        LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
+        COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.'
+        Linking CXX executable cmTC_009bb.elf
+        /usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_009bb.dir/link.txt --verbose=1
+        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o -o cmTC_009bb.elf  -lwut -lm
         Using built-in specs.
-        Reading specs from D:/msys64real/opt/devkitpro/wut/share/wut.specs
+        Reading specs from C:/msys64/opt/devkitpro/wut/share/wut.specs
         rename spec link to old_link
-        COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe
-        COLLECT_LTO_WRAPPER=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe
+        COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe
+        COLLECT_LTO_WRAPPER=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe
         Target: powerpc-eabi
         Configured with: ../../gcc-13.2.0/configure --enable-languages=c,c++,objc,lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections'
         Thread model: dkp
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.1.0 (devkitPPC release 45.2) 
-        COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
-        LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_e3fbb.elf' '-dumpdir' 'cmTC_e3fbb.elf.'
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\msys64real\\tmp\\cctX8fPQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T D:/msys64real/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_e3fbb.elf D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LD:/msys64real/opt/devkitpro/wut/lib -LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib -LD:/msys64real/opt/devkitpro/portlibs/ppc/lib -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o -lwut -lstdc++ -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o
+        COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
+        LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_009bb.elf' '-dumpdir' 'cmTC_009bb.elf.'
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccKR8V9G.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T C:/msys64/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_009bb.elf C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LC:/msys64/opt/devkitpro/wut/lib -LC:/msys64/opt/devkitpro/portlibs/wiiu/lib -LC:/msys64/opt/devkitpro/portlibs/ppc/lib -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o -lwut -lstdc++ -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o
         GNU ld (GNU Binutils) 2.42
           Supported emulations:
            elf32ppc
@@ -147,122 +147,122 @@ events:
            elf32lppcsim
            elf64ppc
            elf64lppc
-        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_e3fbb.elf' '-dumpdir' 'cmTC_e3fbb.elf.'
-        make[1]: Leaving directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc'
+        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_009bb.elf' '-dumpdir' 'cmTC_009bb.elf.'
+        make[1]: Leaving directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [D:/msys64real/opt/devkitpro/wut/include]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
+          add: [C:/msys64/opt/devkitpro/wut/include]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
         end of search list found
-        skipping relative include dir [D:/msys64real/opt/devkitpro/wut/include]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
+        skipping relative include dir [C:/msys64/opt/devkitpro/wut/include]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
         implicit include dirs: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc']
+        ignore line: [Change Dir: '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_e3fbb/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_e3fbb.dir/build.make CMakeFiles/cmTC_e3fbb.dir/build]
-        ignore line: [make[1]: Entering directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc']
-        ignore line: [Building CXX object CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o]
-        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_009bb/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_009bb.dir/build.make CMakeFiles/cmTC_009bb.dir/build]
+        ignore line: [make[1]: Entering directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY']
+        ignore line: [Building CXX object CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o]
+        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe]
         ignore line: [Target: powerpc-eabi]
         ignore line: [Configured with: ../../gcc-13.2.0/configure --enable-languages=c c++ objc lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections']
         ignore line: [Thread model: dkp]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.1.0 (devkitPPC release 45.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_e3fbb.dir/']
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1plus.exe -quiet -v -iprefix D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D_GNU_SOURCE -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem D:/msys64real/opt/devkitpro/wut/include D:/msys64real/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_e3fbb.dir/ -dumpbase CMakeCXXCompilerABI.cpp -dumpbase-ext .cpp -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o D:\\msys64real\\tmp\\ccvi1Toj.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_009bb.dir/']
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1plus.exe -quiet -v -iprefix C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D_GNU_SOURCE -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem C:/msys64/opt/devkitpro/wut/include C:/msys64/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_009bb.dir/ -dumpbase CMakeCXXCompilerABI.cpp -dumpbase-ext .cpp -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o C:\\msys64\\tmp\\ccsGka0y.s]
         ignore line: [GNU C++17 (devkitPPC release 45.2) version 13.1.0 (powerpc-eabi)]
         ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.18-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ D:/msys64real/opt/devkitpro/wut/include]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
+        ignore line: [ C:/msys64/opt/devkitpro/wut/include]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/powerpc-eabi]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include/c++/13.1.0/backward]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: df1f6c5cbe905eeeb208a495f83259b2]
-        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_e3fbb.dir/']
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o D:\\msys64real\\tmp\\ccvi1Toj.s]
-        ignore line: [COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
-        ignore line: [LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.']
-        ignore line: [Linking CXX executable cmTC_e3fbb.elf]
-        ignore line: [/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_e3fbb.dir/link.txt --verbose=1]
-        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o -o cmTC_e3fbb.elf  -lwut -lm]
+        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_009bb.dir/']
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o C:\\msys64\\tmp\\ccsGka0y.s]
+        ignore line: [COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.']
+        ignore line: [Linking CXX executable cmTC_009bb.elf]
+        ignore line: [/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_009bb.dir/link.txt --verbose=1]
+        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o -o cmTC_009bb.elf  -lwut -lm]
         ignore line: [Using built-in specs.]
-        ignore line: [Reading specs from D:/msys64real/opt/devkitpro/wut/share/wut.specs]
+        ignore line: [Reading specs from C:/msys64/opt/devkitpro/wut/share/wut.specs]
         ignore line: [rename spec link to old_link]
-        ignore line: [COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-g++.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe]
         ignore line: [Target: powerpc-eabi]
         ignore line: [Configured with: ../../gcc-13.2.0/configure --enable-languages=c c++ objc lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections']
         ignore line: [Thread model: dkp]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.1.0 (devkitPPC release 45.2) ]
-        ignore line: [COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
-        ignore line: [LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_e3fbb.elf' '-dumpdir' 'cmTC_e3fbb.elf.']
-        link line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\msys64real\\tmp\\cctX8fPQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T D:/msys64real/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_e3fbb.elf D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LD:/msys64real/opt/devkitpro/wut/lib -LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib -LD:/msys64real/opt/devkitpro/portlibs/ppc/lib -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o -lwut -lstdc++ -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe] ==> ignore
+        ignore line: [COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_009bb.elf' '-dumpdir' 'cmTC_009bb.elf.']
+        link line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\ccKR8V9G.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T C:/msys64/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_009bb.elf C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LC:/msys64/opt/devkitpro/wut/lib -LC:/msys64/opt/devkitpro/portlibs/wiiu/lib -LC:/msys64/opt/devkitpro/portlibs/ppc/lib -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o -lwut -lstdc++ -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=D:msys64realtmpcctX8fPQ.res] ==> ignore
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:msys64tmpccKR8V9G.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lsysbase] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -272,22 +272,22 @@ events:
           arg [-dn] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-T] ==> ignore
-          arg [D:/msys64real/opt/devkitpro/wut/share/wut.ld] ==> ignore
+          arg [C:/msys64/opt/devkitpro/wut/share/wut.ld] ==> ignore
           arg [--gc-sections] ==> ignore
           arg [--emit-relocs] ==> ignore
           arg [--no-eh-frame-hdr] ==> ignore
           arg [-znocopyreloc] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_e3fbb.elf] ==> ignore
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o]
-          arg [-LD:/msys64real/opt/devkitpro/wut/lib] ==> dir [D:/msys64real/opt/devkitpro/wut/lib]
-          arg [-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib] ==> dir [D:/msys64real/opt/devkitpro/portlibs/wiiu/lib]
-          arg [-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib] ==> dir [D:/msys64real/opt/devkitpro/portlibs/ppc/lib]
-          arg [-LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0]
-          arg [-LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc]
-          arg [-LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib]
-          arg [CMakeFiles/cmTC_e3fbb.dir/CMakeCXXCompilerABI.o] ==> ignore
+          arg [cmTC_009bb.elf] ==> ignore
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o]
+          arg [-LC:/msys64/opt/devkitpro/wut/lib] ==> dir [C:/msys64/opt/devkitpro/wut/lib]
+          arg [-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib] ==> dir [C:/msys64/opt/devkitpro/portlibs/wiiu/lib]
+          arg [-LC:/msys64/opt/devkitpro/portlibs/ppc/lib] ==> dir [C:/msys64/opt/devkitpro/portlibs/ppc/lib]
+          arg [-LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0]
+          arg [-LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc]
+          arg [-LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib]
+          arg [CMakeFiles/cmTC_009bb.dir/CMakeCXXCompilerABI.o] ==> ignore
           arg [-lwut] ==> lib [wut]
           arg [-lstdc++] ==> lib [SEARCH_STATIC:stdc++]
           arg [-lm] ==> lib [m]
@@ -297,8 +297,8 @@ events:
           arg [-lc] ==> lib [c]
           arg [--end-group] ==> ignore
           arg [-lgcc] ==> lib [gcc]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
         ignore line: [GNU ld (GNU Binutils) 2.42]
         ignore line: [  Supported emulations:]
         ignore line: [   elf32ppc]
@@ -309,34 +309,34 @@ events:
         ignore line: [   elf32lppcsim]
         ignore line: [   elf64ppc]
         ignore line: [   elf64lppc]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_e3fbb.elf' '-dumpdir' 'cmTC_e3fbb.elf.']
-        ignore line: [make[1]: Leaving directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-ByYyHc']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_009bb.elf' '-dumpdir' 'cmTC_009bb.elf.']
+        ignore line: [make[1]: Leaving directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-pYsDVY']
         ignore line: []
         ignore line: []
-        search lib [SEARCH_STATIC:stdc++] ==> [D:/msys64real/opt/devkitpro/devkitPPC/powerpc-eabi/lib/libstdc++.a]
-        collapse library dir [D:/msys64real/opt/devkitpro/wut/lib] ==> [D:/msys64real/opt/devkitpro/wut/lib]
-        collapse library dir [D:/msys64real/opt/devkitpro/portlibs/wiiu/lib] ==> [D:/msys64real/opt/devkitpro/portlibs/wiiu/lib]
-        collapse library dir [D:/msys64real/opt/devkitpro/portlibs/ppc/lib] ==> [D:/msys64real/opt/devkitpro/portlibs/ppc/lib]
-        collapse library dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> [D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0]
-        collapse library dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> [D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc]
-        collapse library dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> [D:/msys64real/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
-        implicit libs: [wut;D:/msys64real/opt/devkitpro/devkitPPC/powerpc-eabi/lib/libstdc++.a;m;gcc;sysbase;c;gcc]
-        implicit objs: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
-        implicit dirs: [D:/msys64real/opt/devkitpro/wut/lib;D:/msys64real/opt/devkitpro/portlibs/wiiu/lib;D:/msys64real/opt/devkitpro/portlibs/ppc/lib;D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0;D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc;D:/msys64real/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
+        search lib [SEARCH_STATIC:stdc++] ==> [C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/lib/libstdc++.a]
+        collapse library dir [C:/msys64/opt/devkitpro/wut/lib] ==> [C:/msys64/opt/devkitpro/wut/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/portlibs/wiiu/lib] ==> [C:/msys64/opt/devkitpro/portlibs/wiiu/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/portlibs/ppc/lib] ==> [C:/msys64/opt/devkitpro/portlibs/ppc/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> [C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0]
+        collapse library dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> [C:/msys64/opt/devkitpro/devkitPPC/lib/gcc]
+        collapse library dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> [C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
+        implicit libs: [wut;C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/lib/libstdc++.a;m;gcc;sysbase;c;gcc]
+        implicit objs: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
+        implicit dirs: [C:/msys64/opt/devkitpro/wut/lib;C:/msys64/opt/devkitpro/portlibs/wiiu/lib;C:/msys64/opt/devkitpro/portlibs/ppc/lib;C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0;C:/msys64/opt/devkitpro/devkitPPC/lib/gcc;C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
         implicit fwks: []
       
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If"
-      binary: "/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If"
+      source: "/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd"
+      binary: "/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__"
       CMAKE_EXE_LINKER_FLAGS: "-mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs"
@@ -346,61 +346,61 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If'
+        Change Dir: '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd'
         
-        Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_48f8e/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_48f8e.dir/build.make CMakeFiles/cmTC_48f8e.dir/build
-        make[1]: Entering directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If'
-        Building C object CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o
-        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_f5625/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f5625.dir/build.make CMakeFiles/cmTC_f5625.dir/build
+        make[1]: Entering directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd'
+        Building C object CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o
+        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
-        COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe
+        COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe
         Target: powerpc-eabi
         Configured with: ../../gcc-13.2.0/configure --enable-languages=c,c++,objc,lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections'
         Thread model: dkp
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.1.0 (devkitPPC release 45.2) 
-        COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_48f8e.dir/'
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1.exe -quiet -v -iprefix D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem D:/msys64real/opt/devkitpro/wut/include D:/msys64real/usr/share/cmake/Modules/CMakeCCompilerABI.c -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_48f8e.dir/ -dumpbase CMakeCCompilerABI.c -dumpbase-ext .c -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o D:\\msys64real\\tmp\\cc4JhuH4.s
+        COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_f5625.dir/'
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1.exe -quiet -v -iprefix C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem C:/msys64/opt/devkitpro/wut/include C:/msys64/usr/share/cmake/Modules/CMakeCCompilerABI.c -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_f5625.dir/ -dumpbase CMakeCCompilerABI.c -dumpbase-ext .c -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o C:\\msys64\\tmp\\ccZop9zh.s
         GNU C17 (devkitPPC release 45.2) version 13.1.0 (powerpc-eabi)
         	compiled by GNU C version 10.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.18-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"
-        ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
-        ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"
+        ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"
+        ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         D:/msys64real/opt/devkitpro/wut/include
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include
+         C:/msys64/opt/devkitpro/wut/include
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include
         End of search list.
         Compiler executable checksum: 3361203e57e3fd2f0ae255fa9837e460
-        COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_48f8e.dir/'
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o D:\\msys64real\\tmp\\cc4JhuH4.s
-        COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
-        LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
-        COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.'
-        Linking C executable cmTC_48f8e.elf
-        /usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_48f8e.dir/link.txt --verbose=1
-        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o -o cmTC_48f8e.elf  -lwut -lm
+        COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_f5625.dir/'
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o C:\\msys64\\tmp\\ccZop9zh.s
+        COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
+        LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
+        COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.'
+        Linking C executable cmTC_f5625.elf
+        /usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_f5625.dir/link.txt --verbose=1
+        /opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o -o cmTC_f5625.elf  -lwut -lm
         Using built-in specs.
-        Reading specs from D:/msys64real/opt/devkitpro/wut/share/wut.specs
+        Reading specs from C:/msys64/opt/devkitpro/wut/share/wut.specs
         rename spec link to old_link
-        COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe
-        COLLECT_LTO_WRAPPER=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe
+        COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe
+        COLLECT_LTO_WRAPPER=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe
         Target: powerpc-eabi
         Configured with: ../../gcc-13.2.0/configure --enable-languages=c,c++,objc,lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections'
         Thread model: dkp
         Supported LTO compression algorithms: zlib zstd
         gcc version 13.1.0 (devkitPPC release 45.2) 
-        COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
-        LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
-        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_48f8e.elf' '-dumpdir' 'cmTC_48f8e.elf.'
-         D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\msys64real\\tmp\\ccLHetez.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T D:/msys64real/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_48f8e.elf D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LD:/msys64real/opt/devkitpro/wut/lib -LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib -LD:/msys64real/opt/devkitpro/portlibs/ppc/lib -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o -lwut -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o
+        COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/
+        LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_f5625.elf' '-dumpdir' 'cmTC_f5625.elf.'
+         C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\cc1ZAUHu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T C:/msys64/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_f5625.elf C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LC:/msys64/opt/devkitpro/wut/lib -LC:/msys64/opt/devkitpro/portlibs/wiiu/lib -LC:/msys64/opt/devkitpro/portlibs/ppc/lib -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o -lwut -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o
         GNU ld (GNU Binutils) 2.42
           Supported emulations:
            elf32ppc
@@ -411,110 +411,110 @@ events:
            elf32lppcsim
            elf64ppc
            elf64lppc
-        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_48f8e.elf' '-dumpdir' 'cmTC_48f8e.elf.'
-        make[1]: Leaving directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If'
+        COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_f5625.elf' '-dumpdir' 'cmTC_f5625.elf.'
+        make[1]: Leaving directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [D:/msys64real/opt/devkitpro/wut/include]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
-          add: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
+          add: [C:/msys64/opt/devkitpro/wut/include]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
+          add: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
         end of search list found
-        skipping relative include dir [D:/msys64real/opt/devkitpro/wut/include]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
-        skipping relative include dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
+        skipping relative include dir [C:/msys64/opt/devkitpro/wut/include]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
+        skipping relative include dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
         implicit include dirs: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
       - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:3 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If']
+        ignore line: [Change Dir: '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_48f8e/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_48f8e.dir/build.make CMakeFiles/cmTC_48f8e.dir/build]
-        ignore line: [make[1]: Entering directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If']
-        ignore line: [Building C object CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o]
-        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake.exe -E env VERBOSE=1 /usr/bin/make.exe -f Makefile cmTC_f5625/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_f5625.dir/build.make CMakeFiles/cmTC_f5625.dir/build]
+        ignore line: [make[1]: Entering directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd']
+        ignore line: [Building C object CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o]
+        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe  -isystem /opt/devkitpro/wut/include -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG   -v -o CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe]
         ignore line: [Target: powerpc-eabi]
         ignore line: [Configured with: ../../gcc-13.2.0/configure --enable-languages=c c++ objc lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections']
         ignore line: [Thread model: dkp]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.1.0 (devkitPPC release 45.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_48f8e.dir/']
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1.exe -quiet -v -iprefix D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem D:/msys64real/opt/devkitpro/wut/include D:/msys64real/usr/share/cmake/Modules/CMakeCCompilerABI.c -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_48f8e.dir/ -dumpbase CMakeCCompilerABI.c -dumpbase-ext .c -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o D:\\msys64real\\tmp\\cc4JhuH4.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_f5625.dir/']
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/cc1.exe -quiet -v -iprefix C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ -D ESPRESSO -D __WIIU__ -D __WUT__ -D NDEBUG -isystem C:/msys64/opt/devkitpro/wut/include C:/msys64/usr/share/cmake/Modules/CMakeCCompilerABI.c -mcall-sysv -quiet -dumpdir CMakeFiles/cmTC_f5625.dir/ -dumpbase CMakeCCompilerABI.c -dumpbase-ext .c -mcpu=750 -meabi -mhard-float -g -O2 -version -ffunction-sections -fdata-sections -o C:\\msys64\\tmp\\ccZop9zh.s]
         ignore line: [GNU C17 (devkitPPC release 45.2) version 13.1.0 (powerpc-eabi)]
         ignore line: [	compiled by GNU C version 10.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.18-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"]
-        ignore line: [ignoring nonexistent directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
-        ignore line: [ignoring duplicate directory "D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/../../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ D:/msys64real/opt/devkitpro/wut/include]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
+        ignore line: [ C:/msys64/opt/devkitpro/wut/include]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/include-fixed]
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 3361203e57e3fd2f0ae255fa9837e460]
-        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_48f8e.dir/']
-        ignore line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o D:\\msys64real\\tmp\\cc4JhuH4.s]
-        ignore line: [COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
-        ignore line: [LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'D:/msys64real/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.']
-        ignore line: [Linking C executable cmTC_48f8e.elf]
-        ignore line: [/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_48f8e.dir/link.txt --verbose=1]
-        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o -o cmTC_48f8e.elf  -lwut -lm]
+        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_f5625.dir/']
+        ignore line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/as.exe -mppc -many -mbig -o CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o C:\\msys64\\tmp\\ccZop9zh.s]
+        ignore line: [COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-isystem' 'C:/msys64/opt/devkitpro/wut/include' '-mcpu=750' '-meabi' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o' '-c' '-dumpdir' 'CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.']
+        ignore line: [Linking C executable cmTC_f5625.elf]
+        ignore line: [/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_f5625.dir/link.txt --verbose=1]
+        ignore line: [/opt/devkitpro/devkitPPC/bin/powerpc-eabi-gcc.exe -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__  -g -O2 -DNDEBUG -mcpu=750 -meabi -mhard-float -L/opt/devkitpro/wut/lib -L/opt/devkitpro/portlibs/wiiu/lib -L/opt/devkitpro/portlibs/ppc/lib -specs=/opt/devkitpro/wut/share/wut.specs -v CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o -o cmTC_f5625.elf  -lwut -lm]
         ignore line: [Using built-in specs.]
-        ignore line: [Reading specs from D:/msys64real/opt/devkitpro/wut/share/wut.specs]
+        ignore line: [Reading specs from C:/msys64/opt/devkitpro/wut/share/wut.specs]
         ignore line: [rename spec link to old_link]
-        ignore line: [COLLECT_GCC=D:\\msys64real\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe]
-        ignore line: [COLLECT_LTO_WRAPPER=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe]
+        ignore line: [COLLECT_GCC=C:\\msys64\\opt\\devkitpro\\devkitPPC\\bin\\powerpc-eabi-gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe]
         ignore line: [Target: powerpc-eabi]
         ignore line: [Configured with: ../../gcc-13.2.0/configure --enable-languages=c c++ objc lto --enable-lto --with-cpu=750 --disable-nls --disable-shared --enable-threads=dkp --disable-multilib --disable-win32-registry --disable-libstdcxx-pch --disable-libstdcxx-verbose --enable-libstdcxx-time=yes --enable-libstdcxx-filesystem-ts --disable-tm-clone-registry --disable-__cxa_atexit --disable-libssp --enable-cxx-flags='-ffunction-sections -fdata-sections' --target=powerpc-eabi --with-newlib --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitPPC/src/build/x86_64-w64-mingw32/devkitPPC --with-bugurl=https://github.com/devkitpro/buildscripts/issues --with-pkgversion='devkitPPC release 45.2' --build=x86_64-unknown-linux-gnu --host=x86_64-w64-mingw32 --with-gmp=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpfr=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-mpc=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-isl=/opt/devkitpro/crosstools/x86_64-w64-mingw32 --with-zstd=/opt/devkitpro/crosstools/x86_64-w64-mingw32 'CFLAGS_FOR_TARGET=-O2 -ffunction-sections -fdata-sections']
         ignore line: [Thread model: dkp]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 13.1.0 (devkitPPC release 45.2) ]
-        ignore line: [COMPILER_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
-        ignore line: [LIBRARY_PATH=D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
-        ignore line: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_48f8e.elf' '-dumpdir' 'cmTC_48f8e.elf.']
-        link line: [ D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=D:\\msys64real\\tmp\\ccLHetez.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T D:/msys64real/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_48f8e.elf D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LD:/msys64real/opt/devkitpro/wut/lib -LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib -LD:/msys64real/opt/devkitpro/portlibs/ppc/lib -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc -LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o -lwut -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe] ==> ignore
+        ignore line: [COMPILER_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/]
+        ignore line: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_f5625.elf' '-dumpdir' 'cmTC_f5625.elf.']
+        link line: [ C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe -plugin C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll -plugin-opt=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\msys64\\tmp\\cc1ZAUHu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lsysbase -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -dn -Bstatic -T C:/msys64/opt/devkitpro/wut/share/wut.ld --gc-sections --emit-relocs --no-eh-frame-hdr -z nocopyreloc -o cmTC_f5625.elf C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o -LC:/msys64/opt/devkitpro/wut/lib -LC:/msys64/opt/devkitpro/portlibs/wiiu/lib -LC:/msys64/opt/devkitpro/portlibs/ppc/lib -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0 -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc -LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o -lwut -lm -lgcc --start-group -lsysbase -lc --end-group -lgcc C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll] ==> ignore
-          arg [-plugin-opt=D:/msys64real/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=D:msys64realtmpccLHetez.res] ==> ignore
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/liblto_plugin.dll] ==> ignore
+          arg [-plugin-opt=C:/msys64/opt/devkitpro/devkitPPC/bin/../libexec/gcc/powerpc-eabi/13.1.0/lto-wrapper.exe] ==> ignore
+          arg [-plugin-opt=-fresolution=C:msys64tmpcc1ZAUHu.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lsysbase] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -524,22 +524,22 @@ events:
           arg [-dn] ==> ignore
           arg [-Bstatic] ==> search static
           arg [-T] ==> ignore
-          arg [D:/msys64real/opt/devkitpro/wut/share/wut.ld] ==> ignore
+          arg [C:/msys64/opt/devkitpro/wut/share/wut.ld] ==> ignore
           arg [--gc-sections] ==> ignore
           arg [--emit-relocs] ==> ignore
           arg [--no-eh-frame-hdr] ==> ignore
           arg [-znocopyreloc] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_48f8e.elf] ==> ignore
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o]
-          arg [-LD:/msys64real/opt/devkitpro/wut/lib] ==> dir [D:/msys64real/opt/devkitpro/wut/lib]
-          arg [-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib] ==> dir [D:/msys64real/opt/devkitpro/portlibs/wiiu/lib]
-          arg [-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib] ==> dir [D:/msys64real/opt/devkitpro/portlibs/ppc/lib]
-          arg [-LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0]
-          arg [-LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc]
-          arg [-LD:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib]
-          arg [CMakeFiles/cmTC_48f8e.dir/CMakeCCompilerABI.o] ==> ignore
+          arg [cmTC_f5625.elf] ==> ignore
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o]
+          arg [-LC:/msys64/opt/devkitpro/wut/lib] ==> dir [C:/msys64/opt/devkitpro/wut/lib]
+          arg [-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib] ==> dir [C:/msys64/opt/devkitpro/portlibs/wiiu/lib]
+          arg [-LC:/msys64/opt/devkitpro/portlibs/ppc/lib] ==> dir [C:/msys64/opt/devkitpro/portlibs/ppc/lib]
+          arg [-LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0]
+          arg [-LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc]
+          arg [-LC:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib]
+          arg [CMakeFiles/cmTC_f5625.dir/CMakeCCompilerABI.o] ==> ignore
           arg [-lwut] ==> lib [wut]
           arg [-lm] ==> lib [m]
           arg [-lgcc] ==> lib [gcc]
@@ -548,8 +548,8 @@ events:
           arg [-lc] ==> lib [c]
           arg [--end-group] ==> ignore
           arg [-lgcc] ==> lib [gcc]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o]
-          arg [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o] ==> obj [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o]
+          arg [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o] ==> obj [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
         ignore line: [GNU ld (GNU Binutils) 2.42]
         ignore line: [  Supported emulations:]
         ignore line: [   elf32ppc]
@@ -560,19 +560,19 @@ events:
         ignore line: [   elf32lppcsim]
         ignore line: [   elf64ppc]
         ignore line: [   elf64lppc]
-        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LD:/msys64real/opt/devkitpro/wut/lib' '-LD:/msys64real/opt/devkitpro/portlibs/wiiu/lib' '-LD:/msys64real/opt/devkitpro/portlibs/ppc/lib' '-specs=D:/msys64real/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_48f8e.elf' '-dumpdir' 'cmTC_48f8e.elf.']
-        ignore line: [make[1]: Leaving directory '/d/dev/PROJECTS/wiiu3d/build/CMakeFiles/CMakeScratch/TryCompile-B9d5If']
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=750' '-mhard-float' '-ffunction-sections' '-fdata-sections' '-D' 'ESPRESSO' '-D' '__WIIU__' '-D' '__WUT__' '-g' '-O2' '-D' 'NDEBUG' '-mcpu=750' '-meabi' '-mhard-float' '-LC:/msys64/opt/devkitpro/wut/lib' '-LC:/msys64/opt/devkitpro/portlibs/wiiu/lib' '-LC:/msys64/opt/devkitpro/portlibs/ppc/lib' '-specs=C:/msys64/opt/devkitpro/wut/share/wut.specs' '-v' '-o' 'cmTC_f5625.elf' '-dumpdir' 'cmTC_f5625.elf.']
+        ignore line: [make[1]: Leaving directory '/c/users/maupp/Documents/CODING/PROJECTS/americawiiu/build/CMakeFiles/CMakeScratch/TryCompile-go74Wd']
         ignore line: []
         ignore line: []
-        collapse library dir [D:/msys64real/opt/devkitpro/wut/lib] ==> [D:/msys64real/opt/devkitpro/wut/lib]
-        collapse library dir [D:/msys64real/opt/devkitpro/portlibs/wiiu/lib] ==> [D:/msys64real/opt/devkitpro/portlibs/wiiu/lib]
-        collapse library dir [D:/msys64real/opt/devkitpro/portlibs/ppc/lib] ==> [D:/msys64real/opt/devkitpro/portlibs/ppc/lib]
-        collapse library dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> [D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0]
-        collapse library dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> [D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc]
-        collapse library dir [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> [D:/msys64real/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/wut/lib] ==> [C:/msys64/opt/devkitpro/wut/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/portlibs/wiiu/lib] ==> [C:/msys64/opt/devkitpro/portlibs/wiiu/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/portlibs/ppc/lib] ==> [C:/msys64/opt/devkitpro/portlibs/ppc/lib]
+        collapse library dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0] ==> [C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0]
+        collapse library dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc] ==> [C:/msys64/opt/devkitpro/devkitPPC/lib/gcc]
+        collapse library dir [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/../../../../powerpc-eabi/lib] ==> [C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
         implicit libs: [wut;m;gcc;sysbase;c;gcc]
-        implicit objs: [D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o;D:/msys64real/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
-        implicit dirs: [D:/msys64real/opt/devkitpro/wut/lib;D:/msys64real/opt/devkitpro/portlibs/wiiu/lib;D:/msys64real/opt/devkitpro/portlibs/ppc/lib;D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0;D:/msys64real/opt/devkitpro/devkitPPC/lib/gcc;D:/msys64real/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
+        implicit objs: [C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrti.o;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtbegin.o;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/crtend.o;C:/msys64/opt/devkitpro/devkitPPC/bin/../lib/gcc/powerpc-eabi/13.1.0/ecrtn.o]
+        implicit dirs: [C:/msys64/opt/devkitpro/wut/lib;C:/msys64/opt/devkitpro/portlibs/wiiu/lib;C:/msys64/opt/devkitpro/portlibs/ppc/lib;C:/msys64/opt/devkitpro/devkitPPC/lib/gcc/powerpc-eabi/13.1.0;C:/msys64/opt/devkitpro/devkitPPC/lib/gcc;C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/lib]
         implicit fwks: []
       
       

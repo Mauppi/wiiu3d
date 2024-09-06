@@ -49,6 +49,10 @@ void LevelMainMenu::init() {
     fader->init();
 
     vo_intro = sound_create_voice("tervetuloa.dsp", 0.5f, 0.0f, AX_DEVICE_TYPE::AX_DEVICE_TYPE_TV);
+
+    if (lvlchange_fade_in_flag) {
+        fader->fade_in(1.0f, 0);
+    }
 }
 
 void LevelMainMenu::play_voice(const char *soundFile) {
@@ -101,6 +105,7 @@ void LevelMainMenu::update() {
         if (input_flag_disabled) {
             input_flag_disabled = false;
             load_level(LEVEL_PUZZLE1);
+            return;
         }
     }
 
@@ -166,4 +171,6 @@ LevelMainMenu::~LevelMainMenu() {
     ResourceManager_FreeResource("texture_main_menu_quit_button_normal.gtx");
     ResourceManager_FreeResource("texture_main_menu_quit_button_hover.gtx");
     ResourceManager_FreeResource("texture_main_menu_bg.gtx");
+    
+    WHBLogWrite("LevelMainMenu destroyed");
 }

@@ -11,8 +11,6 @@ void Animation::init(float start, float end, float duration) {
     DurTime = duration;
     progress = 0.0f;
     finished = false;
-
-    user_init();
 }
 
 void Animation::play() {
@@ -39,14 +37,14 @@ void Animation::update() {
         finished = true;
     }
 
-    user_update(progress);
+    //user_update(progress);
 
 }
 
 void Animation::deinit() {
     WHBLogPrint("Animation::deinit()...");
 
-    user_deinit();
+    //user_deinit();
 }
 
 Animation::~Animation() {

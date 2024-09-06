@@ -44,17 +44,8 @@ void LevelPuzzle1::init() {
     grave->scale = glm::vec3(128.0f, 164.0f, 1.0f);
     grave->visible = false;
 
-    choice0_anim_1 = new Animation();
-    choice0_anim_2 = new Animation();
-
     choice0_anim_1->init(0.1f, 0.3f, 0.2f);
     choice0_anim_2->init(0.5f, 0.7f, 0.2f);
-
-    fader = new Fader();
-    fader->init();
-    
-    fader->fade_in(1.5f, 0);
-
 }
 
 void LevelPuzzle1::update() {
@@ -144,18 +135,9 @@ void LevelPuzzle1::update() {
             } else if (choiceAnimTimer >= 6.0f && choiceAnimIndex == 13) {
                 choiceAnimIndex = 14;
                 sound_play_voice(sfx_sigma);
-                fader->fade_out(3.0f, 255);
-            } else if (choiceAnimTimer >= 9.0f && choiceAnimIndex == 14) {
-                lvlchange_fade_in_flag = true;
-                load_level(LEVEL_MAIN_MENU);
-                choiceAnimIndex = 15;
-                return;
             }
         }
     }
-
-
-    fader->update();
 
     if (selecting_started && !selecting_finished) {
         choicebox->update();
@@ -200,8 +182,6 @@ void LevelPuzzle1::draw() {
     if (selecting_started && !selecting_finished) {
         choicebox->draw();
     }
-
-    fader->draw();
 }
 
 void LevelPuzzle1::draw_drc() {
@@ -231,11 +211,8 @@ LevelPuzzle1::~LevelPuzzle1() {
     delete choice0_anim_group1;
     delete choice0_anim_group2;
     delete choice0_anim_seq;
-    delete fader;
 
     ResourceManager_FreeResource("trump.gtx");
     ResourceManager_FreeResource("bullet.gtx");
     ResourceManager_FreeResource("sniper.gtx");
-
-    WHBLogWrite("LevelPuzzle1 destroyed");
 }

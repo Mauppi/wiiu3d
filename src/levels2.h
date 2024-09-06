@@ -24,6 +24,8 @@ struct LevelPuzzle1
     AXVoice *sfx_coughdie;
     AXVoice *sfx_sigma;
 
+    Fader *fader;
+
     void init();
     void update();
     void draw();

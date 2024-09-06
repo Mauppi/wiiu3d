@@ -14,6 +14,7 @@ inline LevelMainMenu *main_menu;
 inline LevelPuzzle1 *puzzle1;
 inline Sprite *drc_lookup;
 inline bool drc_lookup_flag = true;
+inline bool lvlchange_fade_in_flag = false;
 
 void load_level(ELevel level, bool first_load = false);
 void level_update();

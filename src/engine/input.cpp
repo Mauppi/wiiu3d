@@ -8,6 +8,15 @@ bool input_init() {
 
     VPADInit();
 
+    VPADTouchCalibrationParam *calibParam = new VPADTouchCalibrationParam;
+
+    calibParam->scaleX = 1920.0f;
+    calibParam->scaleY = 1080.0f;
+    calibParam->adjustX = 0.0f;
+    calibParam->adjustY = 0.0f;
+
+    //VPADSetTPCalibrationParam(VPAD_CHAN_0, calibParam);
+
     return true;
 }
 

@@ -20,6 +20,8 @@ bool app_init() {
     sound_init();
     input_init();
 
+    animationManager.init();
+
     load_level(LEVEL_MAIN_MENU, true);
 
     return true;
@@ -38,9 +40,12 @@ bool app_run() {
         
         input_run();
 
-        graphics_run();
+        animationManager.update();
 
         level_update();
+
+        graphics_run();
+
 
         //WHBLogConsoleDraw();
 
@@ -65,6 +70,8 @@ void app_draw_drc() {
 void app_quit() {
 
     graphics_exit();
+
+    animationManager.deinit();
 
     WHBLogCafeDeinit();
     WHBProcShutdown();

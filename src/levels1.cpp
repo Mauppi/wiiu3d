@@ -89,8 +89,8 @@ void LevelMainMenu::hover_changed(int index) {
 
 void LevelMainMenu::update() {
     if (!first_load_flag) {
-        sound_play_voice(vo_intro);
         first_load_flag = true;
+        sound_play_voice(vo_intro);
         uibt_play_hover->visible = true;
         uibt_play_normal->visible = false;
     }

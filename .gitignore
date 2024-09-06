@@ -1,5 +1,5 @@
 /.vscode
 /build/CMakeFiles
-/build/MakeFile
+/build/Makefile
 /build/CMakeCache.txt
 /build/cmake_install.cmake

@@ -55,16 +55,16 @@ void ChoiceBox::update() {
         touchDownFrames = 40;
         VPADTouchData touch = vpad_current_status.tpNormal;
         VPADGetTPCalibratedPoint(VPAD_CHAN_0, &touch, &vpad_current_status.tpNormal);
-        if (touch.x < 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 2) {
+        if (touch.x < 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 3) {
             // LOWER LEFT CORNER
             select(2);
-        } else if (touch.x > 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 3) {
+        } else if (touch.x > 1280 / 2 && touch.y > 720 / 2 && addedChoices >= 4) {
             // LOWER RIGHT CORNER
             select(3);
-        } else if (touch.x < 1280 / 2 && touch.y < 720 / 2 && addedChoices >= 0) {
+        } else if (touch.x < 1280 / 2 && touch.y < 720 / 2 && addedChoices >= 1) {
             // UPPER LEFT CORNER
             select(0);
-        } else if (touch.x > 1280 / 2 && touch.y < 720 / 2 && addedChoices >= 1) {
+        } else if (touch.x > 1280 / 2 && touch.y < 720 / 2 && addedChoices >= 2) {
             // UPPER RIGHT CORNER
             select(1);
         }
@@ -80,7 +80,7 @@ void ChoiceBox::update() {
 }
 
 void ChoiceBox::select(int index) {
-    if (status->ready) return;
+    if (status->ready || addedChoices < index) return;
 
     WHBLogPrintf("Selected: %d", index);
 

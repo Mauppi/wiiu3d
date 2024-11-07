@@ -14,8 +14,8 @@ void main(){
 
     // Output color = color of the texture at the specified UV
     vec4 colortemp = texture( myTextureSampler, UV ) * modulate;
-    //if (colortemp.a < 0.1)
-    //    discard;
+    if (colortemp.a < 0.001)
+        discard;
     
     color = colortemp;
 }

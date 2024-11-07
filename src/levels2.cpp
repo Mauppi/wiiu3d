@@ -55,6 +55,16 @@ void LevelPuzzle1::init() {
     
     fader->fade_in(1.5f, 0);
 
+    particles = new ParticleSystem();
+    particles->init();
+    particles->emit_position = glm::vec3(720.0f, -720.0f, 0.0f);
+    particles->emit_velocity = glm::vec3(0.0f, 5.0f, 0.0f);
+    particles->emit_lifetime = 0.8f;
+    particles->emit_scale = glm::vec3(340.0f / 3, 380.0f / 3, 1.0f);
+
+    particles->sprite = new Sprite();
+    particles->sprite->init("cough_man.gtx");
+
 }
 
 void LevelPuzzle1::update() {
@@ -62,6 +72,9 @@ void LevelPuzzle1::update() {
         sound_play_voice(vo_intro);
         initial_load_flag = true;
     }
+
+    fader->update();
+    particles->update();
 
     introanimtimer += deltaTime;
     if (introanimtimer >= 1.5f && introanimindex == 0) {
@@ -139,10 +152,12 @@ void LevelPuzzle1::update() {
             } else if (choiceAnimTimer >= 4.0f && choiceAnimIndex == 12) {
                 grave->visible = true;
                 choiceAnimIndex = 13;
+                particles->auto_emitting = true;
                 cough->visible = false;
                 sniper->visible = false;
             } else if (choiceAnimTimer >= 6.0f && choiceAnimIndex == 13) {
                 choiceAnimIndex = 14;
+                particles->auto_emitting = false;
                 sound_play_voice(sfx_sigma);
                 fader->fade_out(3.0f, 255);
             } else if (choiceAnimTimer >= 9.0f && choiceAnimIndex == 14) {
@@ -155,7 +170,6 @@ void LevelPuzzle1::update() {
     }
 
 
-    fader->update();
 
     if (selecting_started && !selecting_finished) {
         choicebox->update();
@@ -197,6 +211,9 @@ void LevelPuzzle1::draw() {
     sniper->draw();
     cough->draw();
     grave->draw();
+
+    particles->draw();
+
     if (selecting_started && !selecting_finished) {
         choicebox->draw();
     }
@@ -232,6 +249,7 @@ LevelPuzzle1::~LevelPuzzle1() {
     delete choice0_anim_group2;
     delete choice0_anim_seq;
     delete fader;
+    delete particles;
 
     ResourceManager_FreeResource("trump.gtx");
     ResourceManager_FreeResource("bullet.gtx");

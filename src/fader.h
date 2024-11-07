@@ -15,6 +15,7 @@ struct Fader {
     private:
         glm::vec4 targetModulate = glm::vec4(1.0f, 1.0f, 1.0f, 0.0f);
         float time = 0.0f;
+        float t = 0.0f;
 };
 
 #endif

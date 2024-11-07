@@ -384,6 +384,21 @@ src/main.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/main.s
 .PHONY : src/main.s
 
+# target to build an object file
+src/particles.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/particles.o
+.PHONY : src/particles.o
+
+# target to preprocess a source file
+src/particles.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/particles.i
+.PHONY : src/particles.i
+
+# target to generate assembly for a file
+src/particles.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/particles.s
+.PHONY : src/particles.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -439,6 +454,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/particles.o"
+	@echo "... src/particles.i"
+	@echo "... src/particles.s"
 .PHONY : help
 
 

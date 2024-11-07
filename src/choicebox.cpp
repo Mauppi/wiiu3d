@@ -87,7 +87,7 @@ void ChoiceBox::select(int index) {
     sound_play_voice(selectSound);
     if (status->selected == index) {
         selectTimes++;
-        if (selectTimes >= 1) {
+        if (selectTimes > 1) {
             sound_play_voice(selectSoundDRC);
             status->ready = true;
         }

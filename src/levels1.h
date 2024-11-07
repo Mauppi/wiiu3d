@@ -14,6 +14,7 @@ struct LevelMainMenu {
     Sprite *uibt_quit_hover;
     Fader *fader;
     AXVoice *vo_intro;
+    AXVoice *music;
     int ui_index = 0;
 
     void init();

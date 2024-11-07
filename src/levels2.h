@@ -6,6 +6,7 @@
 #include "fader.h"
 #include "choicebox.h"
 #include "engine/animation.h"
+#include "particles.h"
 
 struct LevelPuzzle1
 {
@@ -25,6 +26,8 @@ struct LevelPuzzle1
     AXVoice *sfx_sigma;
 
     Fader *fader;
+
+    ParticleSystem *particles;
 
     void init();
     void update();

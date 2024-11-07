@@ -39,7 +39,7 @@ bool Sprite::init(const char* filename) {
 
 void Sprite::draw() {
 
-    if (!visible/* || !current_camera.isInViewFrustum(position, scale)*/) {
+    if (!visible || !current_camera.isInViewFrustum(position, scale)) {
         return;
     }
 
@@ -49,8 +49,8 @@ void Sprite::draw() {
     model = glm::rotate(model, glm::radians(rotation.x), glm::vec3(1.0f, 0.0f, 0.0f));
     model = glm::rotate(model, glm::radians(rotation.y), glm::vec3(0.0f, 1.0f, 0.0f));
     model = glm::rotate(model, glm::radians(rotation.z), glm::vec3(0.0f, 0.0f, 1.0f));
+    MVP = glm::mat4(1.0f);
     MVP = projection * view * model;
-
     
     
     GX2SetBlendConstantColor(1.0f, 1.0f, 1.0f, colorModulate.w);

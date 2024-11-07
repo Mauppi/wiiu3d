@@ -50,6 +50,8 @@ void LevelMainMenu::init() {
 
     vo_intro = sound_create_voice("tervetuloa.dsp", 0.5f, 0.0f, AX_DEVICE_TYPE::AX_DEVICE_TYPE_TV);
 
+    music = sound_create_voice("staying.dsp", 0.5f, 0.0f, AX_DEVICE_TYPE::AX_DEVICE_TYPE_TV);
+
     if (lvlchange_fade_in_flag) {
         fader->fade_in(1.0f, 0);
     }
@@ -95,9 +97,12 @@ void LevelMainMenu::update() {
     if (!first_load_flag) {
         first_load_flag = true;
         sound_play_voice(vo_intro);
+        sound_play_voice(music);
         uibt_play_hover->visible = true;
         uibt_play_normal->visible = false;
     }
+    
+    fader->update();
 
     if (fadeTime > 0.0f) {
         fadeTime -= deltaTime;
@@ -138,7 +143,6 @@ void LevelMainMenu::update() {
         }
     }
 
-    fader->update();
 }
 
 void LevelMainMenu::draw() {
@@ -155,6 +159,8 @@ void LevelMainMenu::draw() {
 LevelMainMenu::~LevelMainMenu() {
     sound_stop_voice(vo_intro);
     AXFreeVoice(vo_intro);
+    sound_stop_voice(music);
+    AXFreeVoice(music);
     delete uibt_play_normal;
     delete uibt_play_hover;
     delete uibt_jaa_normal;

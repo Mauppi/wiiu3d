@@ -6,6 +6,7 @@
 enum ELevel {
     LEVEL_MAIN_MENU,
     LEVEL_PUZZLE1,
+    LEVEL_PUZZLE2,
     LEVEL_ENDING
 };
 

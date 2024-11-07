@@ -27,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/blossom_quest.dir/src/levels2.o.d"
   "CMakeFiles/blossom_quest.dir/src/main.o"
   "CMakeFiles/blossom_quest.dir/src/main.o.d"
+  "CMakeFiles/blossom_quest.dir/src/particles.o"
+  "CMakeFiles/blossom_quest.dir/src/particles.o.d"
   "blossom_quest.elf"
   "blossom_quest.pdb"
   "blossom_quest.rpx"

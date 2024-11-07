@@ -16,6 +16,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <gx2/registers.h>
 #include <gx2/state.h>
+#include <gx2/display.h>
 
 static const float position_vb[] =
 {
@@ -94,10 +95,10 @@ bool graphics_init() {
         return false;
     }
 
+    /*GX2SetViewport(0, 0, 1280, 720, 0.001f, 100.0f);
+    GX2SetScissor(0, 0, 1280, 720);*/
 
-    // VITTU MITÄ PASKAA SAAATAANNAAAAA!!!!!!
-
-    vPosBuf.flags = GX2R_RESOURCE_BIND_VERTEX_BUFFER | GX2R_RESOURCE_USAGE_CPU_READ | GX2R_RESOURCE_USAGE_CPU_WRITE | GX2R_RESOURCE_USAGE_GPU_READ;
+    vPosBuf.flags = (GX2RResourceFlags) (GX2R_RESOURCE_BIND_VERTEX_BUFFER | GX2R_RESOURCE_USAGE_CPU_READ | GX2R_RESOURCE_USAGE_CPU_WRITE | GX2R_RESOURCE_USAGE_GPU_READ);
     vPosBuf.elemSize = 2 * 4;
     vPosBuf.elemCount = 4;
     GX2RCreateBuffer(&vPosBuf);
@@ -105,7 +106,7 @@ bool graphics_init() {
     memcpy(buffer, position_vb, vPosBuf.elemSize * vPosBuf.elemCount);
     GX2RUnlockBufferEx(&vPosBuf, GX2RResourceFlags::GX2R_RESOURCE_BIND_NONE);
 
-    vTexCoordBuf.flags = GX2R_RESOURCE_BIND_VERTEX_BUFFER | GX2R_RESOURCE_USAGE_CPU_READ | GX2R_RESOURCE_USAGE_CPU_WRITE | GX2R_RESOURCE_USAGE_GPU_READ;
+    vTexCoordBuf.flags = (GX2RResourceFlags) (GX2R_RESOURCE_BIND_VERTEX_BUFFER | GX2R_RESOURCE_USAGE_CPU_READ | GX2R_RESOURCE_USAGE_CPU_WRITE | GX2R_RESOURCE_USAGE_GPU_READ);
     vTexCoordBuf.elemSize = 2 * 4;
     vTexCoordBuf.elemCount = 4;
     GX2RCreateBuffer(&vTexCoordBuf);
@@ -128,15 +129,23 @@ void graphics_run() {
 
 
     WHBGfxBeginRender();
+
+    
+
     WHBGfxBeginRenderTV();
+
+    
     
     projection = glm::mat4(1.0f);
     view = glm::mat4(1.0f);
     view = glm::translate(view, current_camera.position);
-    projection = glm::ortho(-1920.0f, 1920.0f, -1080.0f, 1080.0f, 0.1f, 100.0f);
+    
+    GX2ColorBuffer *colbuf = WHBGfxGetTVColourBuffer();
+
+    projection = glm::ortho(-1920.0f, 1920.0f, -1080.0f, 1080.0f, 0.001f, 100.0f);
 
     WHBGfxClearColor(1.0f, 1.0f, 1.0f, 1.0f);
-    GX2ClearDepthStencilEx(WHBGfxGetTVDepthBuffer(), 5.0f, 0, GX2_CLEAR_FLAGS_BOTH);
+    //GX2ClearDepthStencilEx(WHBGfxGetTVDepthBuffer(), 5.0f, 0, GX2_CLEAR_FLAGS_BOTH);
     
     GX2SetFetchShader(&graphics_default_shader_group.fetchShader);
     GX2SetVertexShader(graphics_default_shader_group.vertexShader);
@@ -149,14 +158,17 @@ void graphics_run() {
 
     app_draw();
 
-    /*for (int i = 0; i < graphics_spriteRefs.size(); i++) {
-        graphics_spriteRefs[i]->draw();
-    }*/
+
 
     WHBGfxFinishRenderTV();
+    
+    /*GX2SetViewport(0, 0, 854, 480, 0.001f, 100.0f);
+    GX2SetScissor(0, 0, 854, 480);*/
+
 
     WHBGfxBeginRenderDRC();
 
+    
     WHBGfxClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
     GX2SetFetchShader(&graphics_default_shader_group.fetchShader);

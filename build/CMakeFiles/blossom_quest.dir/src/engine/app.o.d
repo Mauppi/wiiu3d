@@ -315,6 +315,7 @@ CMakeFiles/blossom_quest.dir/src/engine/app.o: \
  C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/bits/uses_allocator_args.h \
  C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/tuple \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/engine/animation.h \
+ C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/particles.h \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/engine/animation.h \
  C:/msys64/opt/devkitpro/wut/include/whb/proc.h \
  C:/msys64/opt/devkitpro/wut/include/whb/log.h \

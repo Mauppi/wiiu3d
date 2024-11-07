@@ -36,5 +36,5 @@ void Camera::update() {
 }
 
 bool Camera::isInViewFrustum(glm::vec3 pos, glm::vec3 scale) {
-    return !(pos.x + scale.x < position.x || pos.x - scale.x > position.y || pos.y + scale.y < position.x + 1920.0f || pos.y - scale.y > position.y + 1080.0f);
+    return true;
 }

@@ -13,25 +13,25 @@ void Fader::init() {
 
 void Fader::fade_in(float time, int a) {
     this->time = time;
+    t = 0.0f;
     blackSpr->colorModulate = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
     targetModulate = glm::vec4(0.0f, 0.0f, 0.0f, a / 255.0f);
 }
 
 void Fader::fade_out(float time, int a) {
     this->time = time;
+    t = 0.0f;
     blackSpr->colorModulate = glm::vec4(1.0f, 1.0f, 1.0f, 0.0f);
     targetModulate = glm::vec4(0.0f, 0.0f, 0.0f, a / 255.0f);
 }
 
 void Fader::update() {
     if (time > 0.0f) {
+        
+        blackSpr->colorModulate.w = glm::mix(blackSpr->colorModulate.w, targetModulate.w, t);
+        t = deltaTime / time;
         time -= deltaTime;
-        if (blackSpr->colorModulate.w < targetModulate.w) {
-            blackSpr->colorModulate.w += deltaTime / time * (targetModulate.w - blackSpr->colorModulate.w);
-        } else if (blackSpr->colorModulate.w > targetModulate.w) {
-            blackSpr->colorModulate.w -= deltaTime / time * (blackSpr->colorModulate.w - targetModulate.w);
-        }
-        //WHBLogPrintf("Log alpha: %f", blackSpr->colorModulate.w);
+        
     } else {
         blackSpr->colorModulate = targetModulate;
     }

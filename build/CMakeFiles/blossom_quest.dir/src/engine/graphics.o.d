@@ -320,6 +320,7 @@ CMakeFiles/blossom_quest.dir/src/engine/graphics.o: \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/levels2.h \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/choicebox.h \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/engine/animation.h \
+ C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/particles.h \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/engine/animation.h \
  C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/iostream \
  C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/ostream \
@@ -416,4 +417,5 @@ CMakeFiles/blossom_quest.dir/src/engine/graphics.o: \
  C:/Users/maupp/Documents/CODING/PROJECTS/americawiiu/src/engine/stb_image.h \
  C:/msys64/opt/devkitpro/devkitPPC/powerpc-eabi/include/c++/13.1.0/stdlib.h \
  C:/msys64/opt/devkitpro/wut/include/gx2/registers.h \
- C:/msys64/opt/devkitpro/wut/include/gx2/state.h
+ C:/msys64/opt/devkitpro/wut/include/gx2/state.h \
+ C:/msys64/opt/devkitpro/wut/include/gx2/display.h

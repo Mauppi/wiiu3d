@@ -57,10 +57,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /D/dev/wiiu3d
+CMAKE_SOURCE_DIR = /d/dev/wiiu3d
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /D/dev/wiiu3d/build
+CMAKE_BINARY_DIR = /d/dev/wiiu3d/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /D/dev/wiiu3d/build/CMakeFiles /D/dev/wiiu3d/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /d/dev/wiiu3d/build/CMakeFiles /d/dev/wiiu3d/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /D/dev/wiiu3d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /d/dev/wiiu3d/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -370,6 +370,21 @@ src/levels2.s:
 .PHONY : src/levels2.s
 
 # target to build an object file
+src/levels3.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels3.o
+.PHONY : src/levels3.o
+
+# target to preprocess a source file
+src/levels3.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels3.i
+.PHONY : src/levels3.i
+
+# target to generate assembly for a file
+src/levels3.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/levels3.s
+.PHONY : src/levels3.s
+
+# target to build an object file
 src/main.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/blossom_quest.dir/build.make CMakeFiles/blossom_quest.dir/src/main.o
 .PHONY : src/main.o
@@ -451,6 +466,9 @@ help:
 	@echo "... src/levels2.o"
 	@echo "... src/levels2.i"
 	@echo "... src/levels2.s"
+	@echo "... src/levels3.o"
+	@echo "... src/levels3.i"
+	@echo "... src/levels3.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

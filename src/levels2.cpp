@@ -162,7 +162,7 @@ void LevelPuzzle1::update() {
                 fader->fade_out(3.0f, 255);
             } else if (choiceAnimTimer >= 9.0f && choiceAnimIndex == 14) {
                 lvlchange_fade_in_flag = true;
-                load_level(LEVEL_MAIN_MENU);
+                load_level(LEVEL_PUZZLE2);
                 choiceAnimIndex = 15;
                 return;
             }

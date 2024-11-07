@@ -2,6 +2,7 @@
 #define LEVEL_LOADER_H
 #include "levels1.h"
 #include "levels2.h"
+#include "levels3.h"
 
 enum ELevel {
     LEVEL_MAIN_MENU,
@@ -13,6 +14,7 @@ enum ELevel {
 inline ELevel current_level = LEVEL_MAIN_MENU;
 inline LevelMainMenu *main_menu;
 inline LevelPuzzle1 *puzzle1;
+inline LevelPuzzle2 *puzzle2;
 inline Sprite *drc_lookup;
 inline bool drc_lookup_flag = true;
 inline bool lvlchange_fade_in_flag = false;

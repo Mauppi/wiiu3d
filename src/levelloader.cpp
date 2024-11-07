@@ -14,6 +14,9 @@ void load_level(ELevel level, bool first_load) {
             case LEVEL_PUZZLE1:
                 delete puzzle1;
                 break;
+            case LEVEL_PUZZLE2:
+                delete puzzle2;
+                break;
             default:
                 break;
         }
@@ -35,6 +38,10 @@ void load_level(ELevel level, bool first_load) {
             break;
         case LEVEL_ENDING:
             break;
+        case LEVEL_PUZZLE2:
+            puzzle2 = new LevelPuzzle2();
+            puzzle2->init();
+            break;
         default:
             level = LEVEL_MAIN_MENU;
             break;
@@ -51,6 +58,9 @@ void level_update() {
         case LEVEL_PUZZLE1:
             puzzle1->update();
             break;
+        case LEVEL_PUZZLE2:
+            puzzle2->update();
+            break;
         case LEVEL_ENDING:
             break;
         default:
@@ -65,6 +75,9 @@ void level_draw() {
             break;
         case LEVEL_PUZZLE1:
             puzzle1->draw();
+            break;
+        case LEVEL_PUZZLE2:
+            puzzle2->draw();
             break;
         case LEVEL_ENDING:
             break;
@@ -82,6 +95,9 @@ void level_draw_drc() {
             break;
         case LEVEL_PUZZLE1:
             puzzle1->draw_drc();
+            break;
+        case LEVEL_PUZZLE2:
+            puzzle2->draw_drc();
             break;
         case LEVEL_ENDING:
             break;

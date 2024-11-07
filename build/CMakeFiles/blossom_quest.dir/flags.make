@@ -4,7 +4,7 @@
 # compile CXX with /opt/devkitpro/devkitPPC/bin/powerpc-eabi-g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/D/dev/wiiu3d/include -isystem /opt/devkitpro/wut/include
+CXX_INCLUDES = -I/d/dev/wiiu3d/include -isystem /opt/devkitpro/wut/include
 
 CXX_FLAGS = -mcpu=750 -meabi -mhard-float -ffunction-sections -fdata-sections -DESPRESSO -D__WIIU__ -D__WUT__ -g -O2 -DNDEBUG
 

@@ -1,5 +1,6 @@
 #include "app.h"
 #include <whb/proc.h>
+#include <whb/log_udp.h>
 #include <whb/log.h>
 #include <whb/log_console.h>
 #include <whb/log_cafe.h>
@@ -17,6 +18,7 @@ bool app_init() {
     WHBLogCafeInit();
     graphics_init();
     WHBLogConsoleInit();
+    WHBLogUdpInit();
     sound_init();
     input_init();
 
@@ -73,6 +75,7 @@ void app_quit() {
 
     animationManager.deinit();
 
+    WHBLogUdpDeinit();
     WHBLogCafeDeinit();
     WHBProcShutdown();
 }

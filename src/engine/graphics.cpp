@@ -62,6 +62,8 @@ bool graphics_init() {
     //GX2InitBlendConstantColorReg(&regiblend, 0.0f, 0.0f, 0.0f, 0.0f);
     //GX2SetBlendConstantColorReg(&regiblend);
 
+    
+
     FILE *file = fopen("fs:/vol/content/mainshader.gsh", "rb");
     if (!file) {
         WHBLogPrint("Shader failed first open check, trying /vol/content/mainshader.gsh");

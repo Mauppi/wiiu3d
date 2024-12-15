@@ -69,7 +69,7 @@ void Sprite::draw() {
             GX2_BLEND_COMBINE_MODE_ADD,
             TRUE,
             /* A = [srcA * 1] + [dstA * (1-srcA)] */
-            GX2_BLEND_MODE_SRC_ALPHA, GX2_BLEND_MODE_INV_SRC_ALPHA,
+            GX2_BLEND_MODE_SRC_ALPHA, GX2_BLEND_MODE_ONE,
             GX2_BLEND_COMBINE_MODE_ADD);
 
     GX2DrawEx(GX2_PRIMITIVE_MODE_QUADS, 4, 0, 1);

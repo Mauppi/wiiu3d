@@ -6,7 +6,7 @@ void Fader::init() {
     blackSpr = new Sprite;
     blackSpr->init("texture_black.gtx");
     blackSpr->scale = glm::vec3(1920.0f, 1080.0f, 1.0f);
-    blackSpr->position = glm::vec3(0.0f, 0.0f, 0.3f);
+    blackSpr->position = glm::vec3(0.0f, 0.0f, 2.0f);
     blackSpr->visible = true;
     blackSpr->colorModulate = glm::vec4(1.0f, 1.0f, 1.0f, 0.0f);
 }

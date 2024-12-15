@@ -15,6 +15,9 @@ struct LevelMainMenu {
     Fader *fader;
     AXVoice *vo_intro;
     AXVoice *music;
+    AXVoice *sfx_vo_jaa_click;
+    AXVoice *sfx_vo_play;
+    AXVoice *sfx_vo_quit;
     int ui_index = 0;
 
     void init();

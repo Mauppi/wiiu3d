@@ -56,7 +56,7 @@ AXVoice *sound_create_voice(const char* soundFile, float volume, float pan, AX_D
     offsets.dataType = AX_VOICE_FORMAT_ADPCM;
     offsets.data = soundFileResource.data + 96;
     offsets.endOffset = dspDat.ea;
-    offsets.currentOffset = 0;
+    offsets.currentOffset = dspDat.sa;
     offsets.loopOffset = 0;
     offsets.loopingEnabled = dspDat.loop_flag;
     AXSetVoiceOffsets(voice, &offsets);
@@ -70,7 +70,7 @@ AXVoice *sound_create_voice(const char* soundFile, float volume, float pan, AX_D
 
     
     AXVoiceVeData veData;
-    veData.delta = 0;
+    veData.delta = (volume * 0x8000) / dspDat.sample_rate;
     veData.volume = volume * 0x8000;
     AXSetVoiceVe(voice, &veData);
 

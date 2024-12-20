@@ -48,6 +48,7 @@ AXVoice *sound_create_voice(const char* soundFile, float volume = 1.0f, float pa
 bool sound_play_voice(AXVoice *voice);
 bool sound_stop_voice(AXVoice *voice);
 bool sound_set_voice_volume(AXVoice *voice, float volume);
+bool sound_fade_master_volume(float volume, float time, bool fadeIn = false);
 bool sound_set_voice_pan(AXVoice *voice, float pan, AX_DEVICE_TYPE deviceType = AX_DEVICE_TYPE_TV);
 
 

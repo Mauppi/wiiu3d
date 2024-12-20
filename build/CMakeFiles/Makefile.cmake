@@ -7,10 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/c/Users/maupp/Documents/CODING/PROJECTS/americawiiu/CMakeLists.txt"
-  "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
-  "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.30.3/CMakeSystem.cmake"
+  "/d/dev/wiiu3d/CMakeLists.txt"
+  "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeSystem.cmake"
   "/opt/devkitpro/cmake/Platform/CafeOS.cmake"
   "/opt/devkitpro/cmake/Platform/Generic-dkP.cmake"
   "/opt/devkitpro/cmake/WiiU.cmake"
@@ -122,11 +122,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.30.3/CMakeSystem.cmake"
-  "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
-  "CMakeFiles/3.30.3/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.30.3/CMakeCCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeSystem.cmake"
+  "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.30.1/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
